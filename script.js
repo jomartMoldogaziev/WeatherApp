@@ -45,7 +45,7 @@ const displayShow = (data) => {
     const sunriseTime = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
     const sunsetTime = new Date(data.sys.sunset * 1000).toLocaleTimeString();
 
-    const currentTime = new Date().toLocaleTimeString();
+   
     const airPressure = data.main.pressure;
 
     let cloudy = './cloudy.png'
@@ -92,7 +92,7 @@ const displayShow = (data) => {
     <h3 class="card-title">${data.name}</h3>
     <h6 class="card-text">${data.weather[0].description}</h6>
     <ul class="list-group list-group-flush">
-     <li class="vremia" style="color:red; font-size: 15px"><h6><b>Жергиликтүү убакыт:</b>-</h6>${currentTime}</li>
+    
         <li class="vremia1"><h6>Күндүн чыгышы: -</h6>${sunriseTime}</li>
         <li class="vremia1"><h6>Күндүн батышы:  -</h6>${sunsetTime}</li>
          <li class="list-group-item" style="color:red; font-size: 17px"><h6>Аба басымы:</h6>${airPressure} hPa</li>
